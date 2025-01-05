@@ -114,17 +114,15 @@ async function runTest() {
     const json = results.json;
     console.log(`\n${display}:`);
     console.log(
-      `Transfer Time difference: ${(
+      `Transfer Time gained: ${(
         json.transferTime - format.transferTime
       ).toFixed(2)}ms`
     );
     console.log(
-      `Total Time difference: ${(json.totalTime - format.totalTime).toFixed(
-        2
-      )}ms`
+      `Total Time gained: ${(json.totalTime - format.totalTime).toFixed(2)}ms`
     );
     console.log(
-      `Size difference: ${((json.size - format.size) / 1024).toFixed(2)}KB`
+      `Size gained: ${((json.size - format.size) / 1024).toFixed(2)}KB`
     );
     console.log(
       `Size reduction: ${((1 - format.size / json.size) * 100).toFixed(2)}%`
