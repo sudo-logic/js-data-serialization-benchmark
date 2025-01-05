@@ -17,3 +17,7 @@ This project provides a simple server and client to benchmark the performance of
 - MessagePack (using msgpack5)
 - Protocol Buffers (using protobufjs)
 - PSON (using pson)
+
+## Benchmark Results
+
+Overall, if we compare simply according to the total time gained, Javascript's native JSON is the fastest, which is a bummer. This is probably due to the fact that the functions are written in C++ and run inside the v8 engine, while protobuf and msgpack are written in pure javascript.
