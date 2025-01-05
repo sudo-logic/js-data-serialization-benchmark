@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+message Item {
+  int32 id = 1;
+  string name = 2;
+  string description = 3;
+  double price = 4;
+  int32 quantity = 5;
+  repeated string tags = 6;
+  Metadata metadata = 7;
+}
+
+message Metadata {
+  string created = 1;
+  string lastModified = 2;
+  string category = 3;
+}
+
+message ItemList {
+  repeated Item items = 1;
+}
