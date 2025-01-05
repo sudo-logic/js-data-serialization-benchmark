@@ -119,11 +119,6 @@ async function runTest() {
       ).toFixed(2)}ms`
     );
     console.log(
-      `Parse Time difference: ${(json.parseTime - format.parseTime).toFixed(
-        2
-      )}ms`
-    );
-    console.log(
       `Total Time difference: ${(json.totalTime - format.totalTime).toFixed(
         2
       )}ms`
